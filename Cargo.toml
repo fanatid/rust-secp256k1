@@ -1,0 +1,12 @@
+[package]
+name = "rust-secp256k1"
+version = "0.1.0"
+authors = ["Kirill Fomichev <fanatid@ya.ru>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# secp256k1-sys = "0.4.0"
+secp256k1-sys = { version = "0.4.0", git = "https://github.com/rust-bitcoin/rust-secp256k1" }
